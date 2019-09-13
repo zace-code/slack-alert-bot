@@ -1,0 +1,34 @@
+---
+# note: user tokens start with xoxop, bot tokens start with xoxob
+:user_token: xoxop-some-token-here
+:bot_token: xoxob-beep-boop
+
+# any channel names listed here will be watched for updates
+:watch_channels:
+- 'bright-ideas'
+- 'ideas'
+- 'dim-ideas-but-still-ideas'
+
+# any channel names listed here will be alerted by ideas
+:alert_channels:
+- 'edgehogs'
+- 'in-need-of-ideas'
+
+# if a message starts with any of the following words/phrases
+#  we save it
+:keywords:
+- ':lightbulb:'
+- 'my bright idea is'
+- 'my idea is'
+
+# the amount of time (in minutes) to wait before showing another
+#  popup to a user
+:timeout: 45
+
+# a message to show the user as they write an idea
+#  '%s' can be included in the string and a comma-separated list
+#  of the keywords will be supplied in its place.
+# note: any newlines need to be explicitly defined as \n
+#       implicit newlines are ignored
+:popup_message: "This idea is gonna rock!"
+#:popup_message: "Start a message with %s to send an alert"
